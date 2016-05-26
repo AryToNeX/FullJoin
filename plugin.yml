@@ -1,7 +1,9 @@
 name: FullJoin
 main: FullJoin\Main
 version: 1.0.0
-api: [1.12.0]
+api:
+ - 1.12.0
+ - 2.0.0
 load: STARTUP
 author: AryToNeX
 description: Allow players to join full servers by permission
