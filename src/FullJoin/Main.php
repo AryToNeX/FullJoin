@@ -30,8 +30,7 @@ class Main extends PluginBase implements Listener{
   }
   
   public function onPlayerKick(PlayerKickEvent $event){
-    $player = $event->getPlayer();
-		  if($player->hasPermission("fulljoin.join") and $event->getReason() === "disconnectionScreen.serverFull"){
+		  if($event->getPlayer()->hasPermission("fulljoin.join") and $event->getReason() === "disconnectionScreen.serverFull"){
 			  $event->setCancelled(true);
 		  }
 	
