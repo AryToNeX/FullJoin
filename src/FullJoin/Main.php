@@ -1,16 +1,5 @@
 <?php
 
-/*
-#############################################
-               --> FULLJOIN <--
-             --> By @AryToNeX <--
-   --> Follow me on Twitter: @AryToNeX <--
---> And also in PocketMine Forums: @ToNeX <--
-#############################################
-*/
-
-# Okay let's do this! ;D
-
 namespace FullJoin;
 
 use pocketmine\plugin\PluginBase;
@@ -30,9 +19,7 @@ class Main extends PluginBase implements Listener{
   }
   
   public function onPlayerKick(PlayerKickEvent $event){
-		  if($event->getPlayer()->hasPermission("fulljoin.join") and $event->getReason() === "disconnectionScreen.serverFull"){
-			  $event->setCancelled(true);
-		  }
-	
-	}
+    if($event->getPlayer()->hasPermission("fulljoin.join") and $event->getReason() === "disconnectionScreen.serverFull")
+      $event->setCancelled(true);
+  }
 }
