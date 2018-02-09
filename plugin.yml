@@ -1,8 +1,7 @@
 name: FullJoin
 main: FullJoin\Main
 version: 1.0.1
-api:
- - 3.0.0-ALPHA9
+api: [3.0.0-ALPHA11]
 author: AryToNeX
 description: Allow players to join full servers by custom permission
 website: https://github.com/AryToNeX
